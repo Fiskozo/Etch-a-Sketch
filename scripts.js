@@ -11,3 +11,7 @@ const createGrid = function() {
     }
 } 
 createGrid();
+
+document.getElementById('newDiv').onmouseover = function() {
+      newDiv.classList('hover')
+};
