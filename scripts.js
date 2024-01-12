@@ -1,7 +1,7 @@
 const container = document.querySelector('#container');
 container.classList.add('container');
 
-let numberOfGrid = 16
+let numberOfGrid = 256
 
 const createGrid = function() {
     for (let index = 0; index < numberOfGrid; index++) {
