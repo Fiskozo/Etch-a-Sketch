@@ -1,12 +1,13 @@
 const container = document.querySelector('#container');
 container.classList.add('container');
 
-const createGrid = function() {
-    for (let index = 0; index < 16; index++) {
-        const div = document.createElement('div');
-        div.classList.add('grid');
-        document.getElementById('grid').appendChild(container);    
-    }
-}
+let numberOfGrid = 16
 
-console.log(createGrid);
+const createGrid = function() {
+    for (let index = 0; index < numberOfGrid; index++) {
+        const newDiv = document.createElement('div');
+        newDiv.classList.add('newDiv');
+        container.appendChild(newDiv); 
+    }
+} 
+createGrid();
