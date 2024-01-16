@@ -1,12 +1,14 @@
 const container = document.querySelector('#container');
 container.classList.add('container');
+const btn = document.querySelector('#btn')
+btn.classList.add('btn')
 
-let input = 16
-let numberOfGrid = input * input
-
-
-
-const createGrid = function() {
+let getInput = document.getElementById('btn').onclick = function() {
+    let input = parseInt(prompt("Grid size?", "0"), 10);
+    let numberOfGrid = input * input
+    if (input > 100) {
+        alert("No more than 100 please :D");
+    }else{
     for (let index = 0; index < numberOfGrid; index++) {
         const newDiv = document.createElement('div');
         newDiv.classList.add('newDiv');
@@ -15,10 +17,11 @@ const createGrid = function() {
         container.appendChild(newDiv);
         newDiv.onmouseover = function() {
             newDiv.classList.add('hover');
-      };     
-    }
-} 
-createGrid();
+            };     
+        };
+    };
+};
+
 
 
 
