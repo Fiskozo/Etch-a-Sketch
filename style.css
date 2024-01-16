@@ -1,6 +1,11 @@
+.newDiv.hover {
+    background-color: black;
+}
+
 .newDiv {
     height: 10px;
     width: 10px;
+    
 }
 
 .container {
@@ -9,3 +14,4 @@
     height: 160px;
     width: 160px;
 }
+
