@@ -19,8 +19,11 @@ let getInput = document.getElementById('btn').onclick = function() {
         newDiv.style.height = (500 / input) + "px"
         container.appendChild(newDiv);
         newDiv.onmouseover = function() {
-            newDiv.classList.add('hover');
-            };     
+            let r = Math.floor(Math.random()*255);
+            let g = Math.floor(Math.random()*255);
+            let b = Math.floor(Math.random()*255);
+            newDiv.style.backgroundColor = "rgb("+r+","+g+","+b+")";
+            }    
         };
     }else{
     for (let index = 0; index < numberOfGrid; index++) {
@@ -30,11 +33,15 @@ let getInput = document.getElementById('btn').onclick = function() {
         newDiv.style.height = (500 / input) + "px"
         container.appendChild(newDiv);
         newDiv.onmouseover = function() {
-            newDiv.classList.add('hover');
-            };     
-        };
+            let r = Math.floor(Math.random()*255);
+            let g = Math.floor(Math.random()*255);
+            let b = Math.floor(Math.random()*255);
+            newDiv.style.backgroundColor = "rgb("+r+","+g+","+b+")";
+            }
+        };     
     };
 };
+
 
 
 
